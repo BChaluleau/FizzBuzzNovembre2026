@@ -9,13 +9,18 @@ public class FizzBuzzer {
 
 	public String next() {
 		turn += 1;
+		String magic = checkForMagic();
+		return magic.isEmpty() ? Integer.toString(turn) : magic;
+	}
+
+	private String checkForMagic() {
+		StringBuilder magic = new StringBuilder();
 		for (int i = 0; i < MAGIC_KEYS.length; i++) {
-			if (turn % MAGIC_KEYS[i] == 0) { // turn est divisible par MAGIC_KEYS
-				return MAGIC_VALUES[i];
+			if (turn % MAGIC_KEYS[i] == 0) {
+				magic.append(MAGIC_VALUES[i]);
 			}
 		}
-
-		return Integer.toString(turn);
+		return magic.toString();
 	}
 
 }
