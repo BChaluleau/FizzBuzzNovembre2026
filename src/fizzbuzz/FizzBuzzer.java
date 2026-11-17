@@ -2,16 +2,20 @@ package fizzbuzz;
 
 public class FizzBuzzer {
 
-	private static final int MAGIC_VALUE = 3; // refactor : deux constantes
-	private static final String MAGIC_KEY = "Fizz";
+	private static final int[] MAGIC_KEYS = { 3, 5 }; // refactor : deux constantes
+	private static final String[] MAGIC_VALUES = { "Fizz", "Buzz" };
 
 	private int turn = 0;
 
 	public String next() {
 		turn += 1;
-		if (turn == MAGIC_VALUE) {
-			return MAGIC_KEY;
+		// dictionnaire du pauvre
+		for (int i = 0; i < MAGIC_KEYS.length; i++) {
+			if (MAGIC_KEYS[i] == turn) {
+				return MAGIC_VALUES[i];
+			}
 		}
+
 		return Integer.toString(turn);
 	}
 

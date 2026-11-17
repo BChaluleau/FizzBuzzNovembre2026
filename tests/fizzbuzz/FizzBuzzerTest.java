@@ -11,6 +11,7 @@ class FizzBuzzerTest {
 
 	@BeforeEach
 	void setup() {
+		// on repart d'une nouvelle instance propre
 		fb = new FizzBuzzer();
 	}
 
@@ -40,7 +41,13 @@ class FizzBuzzerTest {
 	@Test
 	void firstTurns() {
 		preshot(3);
-		assertEquals("4", fb.next()); // red --> green gratuit ! --> refactor gratuit
+		assertEquals("4", fb.next());
+	}
+
+	@Test
+	void firstBuzz() {
+		preshot(4);
+		assertEquals("Buzz", fb.next());
 	}
 
 }
