@@ -12,7 +12,7 @@ Etudiant : 7777777
 - [X] 1
 - [X] 2
 - [X] Fizz
-- [ ] 4
+- [X] 4
 - [ ] Buzz
 - [ ] Fizz, 7, 8, Fizz, Buzz
 - [ ] le 15e coup --> FizzBuzz

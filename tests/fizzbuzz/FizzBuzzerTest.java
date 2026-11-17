@@ -17,19 +17,17 @@ class FizzBuzzerTest {
 	@Test
 	void firstPlayerSaysOne() {
 		assertEquals("1", fb.next());
-		// red ==> ça ne compile pas
-		// green ==> faire passer le test le plus simplement possible
 	}
 
 	@Test
 	void secondPlayerSaysTwo() {
-		preshot(1); // refactor
+		preshot(1);
 		assertEquals("2", fb.next());
 	}
 
 	@Test
 	void firstFizz() {
-		preshot(2); // refactor
+		preshot(2);
 		assertEquals("Fizz", fb.next());
 	}
 
@@ -37,6 +35,12 @@ class FizzBuzzerTest {
 		for (int i = 0; i < nbTurns; i++) {
 			fb.next();
 		}
+	}
+
+	@Test
+	void firstTurns() {
+		preshot(3);
+		assertEquals("4", fb.next()); // red --> green gratuit ! --> refactor gratuit
 	}
 
 }
