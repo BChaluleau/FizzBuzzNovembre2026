@@ -32,12 +32,6 @@ class FizzBuzzerTest {
 		assertEquals("Fizz", fb.next());
 	}
 
-	private void preshot(int nbTurns) {
-		for (int i = 0; i < nbTurns; i++) {
-			fb.next();
-		}
-	}
-
 	@Test
 	void firstTurns() {
 		preshot(3);
@@ -53,17 +47,31 @@ class FizzBuzzerTest {
 	@Test
 	void midGame() {
 		preshot(5);
-		assertEquals("Fizz", fb.next());
-		assertEquals("7", fb.next());
-		assertEquals("8", fb.next());
-		assertEquals("Fizz", fb.next());
-		assertEquals("Buzz", fb.next());
+		String expected = "Fizz, 7, 8, Fizz, Buzz";
+		assertEquals(expected, preshot(5));
 	}
 
 	@Test
 	void firstFizzBuzz() {
 		preshot(14);
 		assertEquals("FizzBuzz", fb.next());
+	}
+
+	@Test
+	void lateGame() {
+		String expected = "1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz, 16, 17, Fizz, 19, Buzz, Fizz, 22, 23, Fizz, Buzz";
+		assertEquals(expected, preshot(25));
+	}
+
+	private String preshot(int nbTurns) {
+		StringBuilder sb = new StringBuilder();
+		for (int i = 0; i < nbTurns; i++) {
+			if (i > 0) {
+				sb.append(", ");
+			}
+			sb.append(fb.next());
+		}
+		return sb.toString();
 	}
 
 }
