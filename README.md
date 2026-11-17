@@ -6,10 +6,10 @@ Etudiant : 7777777
 
 ## Première étape 
 - [X] dans le readme, indique mon nom / prénom 
-- [X] Initialiser le backlog (lise initiale des itérations)
+- [X] Initialiser le backlog (lise initiale des itérations)*
 
 ### backlog
-- [ ] 1
+- [X] 1
 - [ ] 2
 - [ ] Fizz
 - [ ] 4
