@@ -14,7 +14,7 @@ Etudiant : 7777777
 - [X] Fizz
 - [X] 4
 - [X] Buzz
-- [ ] Fizz, 7, 8, Fizz, Buzz
+- [X] Fizz, 7, 8, Fizz, Buzz
 - [ ] le 15e coup --> FizzBuzz
 - [ ] 25 premiers coups -> 1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz, 16, 17, Fizz, 19, Buzz, Fizz, 22, 23, Fizz, Buzz
 

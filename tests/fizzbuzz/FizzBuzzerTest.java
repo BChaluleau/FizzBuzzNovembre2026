@@ -50,4 +50,14 @@ class FizzBuzzerTest {
 		assertEquals("Buzz", fb.next());
 	}
 
+	@Test
+	void midGame() {
+		preshot(5);
+		assertEquals("Fizz", fb.next());
+		assertEquals("7", fb.next());
+		assertEquals("8", fb.next());
+		assertEquals("Fizz", fb.next());
+		assertEquals("Buzz", fb.next());
+	}
+
 }
