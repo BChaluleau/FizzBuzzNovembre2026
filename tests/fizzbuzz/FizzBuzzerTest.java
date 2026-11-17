@@ -21,4 +21,10 @@ class FizzBuzzerTest {
 		// green ==> faire passer le test le plus simplement possible
 	}
 
+	@Test
+	void secondPlayerSaysTwo() {
+		fb.next();
+		assertEquals("2", fb.next());
+	}
+
 }

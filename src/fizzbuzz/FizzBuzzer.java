@@ -2,8 +2,11 @@ package fizzbuzz;
 
 public class FizzBuzzer {
 
+	private int turn = 0;
+
 	public String next() {
-		return "1"; // implémentation la plus simple possible : green
+		turn += 1;
+		return Integer.toString(turn);
 	}
 
 }
