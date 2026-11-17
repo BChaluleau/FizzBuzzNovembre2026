@@ -10,8 +10,8 @@ Etudiant : 7777777
 
 ### backlog
 - [X] 1
-- [ ] 2
-- [ ] Fizz
+- [X] 2
+- [X] Fizz
 - [ ] 4
 - [ ] Buzz
 - [ ] Fizz, 7, 8, Fizz, Buzz

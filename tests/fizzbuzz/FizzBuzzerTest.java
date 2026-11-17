@@ -23,8 +23,20 @@ class FizzBuzzerTest {
 
 	@Test
 	void secondPlayerSaysTwo() {
-		fb.next();
+		preshot(1); // refactor
 		assertEquals("2", fb.next());
+	}
+
+	@Test
+	void firstFizz() {
+		preshot(2); // refactor
+		assertEquals("Fizz", fb.next());
+	}
+
+	private void preshot(int nbTurns) {
+		for (int i = 0; i < nbTurns; i++) {
+			fb.next();
+		}
 	}
 
 }
